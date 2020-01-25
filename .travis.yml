@@ -1,0 +1,15 @@
+dist: trusty
+sudo: required
+
+addons:
+    sonarcloud:
+      organization: samrachsoemcambodia
+script:
+  - sonar-scanner
+
+cache:
+  directories:
+    - '$HOME/.sonar/cache'
+
+notifications:
+    email: false
